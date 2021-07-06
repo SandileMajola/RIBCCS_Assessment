@@ -8,7 +8,7 @@ NUnit 3.12.0
 
 Selenium Webdriver 3.141.0
 
-Selenium Chrome Driver 91.0.0
+Selenium Chrome Driver 91.0.4472.10100
 
 Selenium Firefox Driver 0.27.0
 
@@ -24,6 +24,8 @@ To run - Right click any of the "Tests" and select Run or Debug or alternatively
 
 To run in different browsers, Please update the runSettings file to the browser you want to run the tests.
 ![image](https://user-images.githubusercontent.com/35298568/124541666-31c23e80-de22-11eb-8bad-fd8208ba23de.png)
+
+Please ensure when running on Chrome that you are on version 91.0.4472.10100.
 
 
 There is 4 Scenarios :
