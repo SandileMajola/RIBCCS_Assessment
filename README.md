@@ -3,11 +3,17 @@ RIB CCS Assessment
 Libraries used :
 
 NUnit 3.12.0
+
 .Net Core 3.1
+
 Selenium Webdriver 3.141.0
+
 Selenium Chrome Driver 91.0.0
+
 Selenium Firefox Driver 0.27.0
+
 Selenium Supprot 3.141.0
+
 How To Run:
 
 Clone Repo to your local machine
