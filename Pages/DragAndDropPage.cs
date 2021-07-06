@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using System;
@@ -19,9 +20,18 @@ namespace RIBCCS.Pages
 
         public void DragItem(string item)
         {
-            driver.SwitchTo().Frame(1);
+            if(TestContext.Parameters["Browser"] == "Chrome")
+            {
+                driver.SwitchTo().Frame(2);
+            }
+            else if (TestContext.Parameters["Browser"] == "FireFox")
+            {
+                driver.SwitchTo().Frame(1);
+            }
+            
 
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            wait.Until(driver => driver.FindElement(By.Id("trash")));
 
             IWebElement trash = driver.FindElement(By.Id("trash"));
             IWebElement itemToDrag = driver.FindElement(By.XPath(".//div[1]/ul/li[1]"));

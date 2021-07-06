@@ -19,14 +19,14 @@ namespace RIBCCS.Pages
 
         public void FillInSamplePage(string name, string email, string website, string experience, string comment)
         {
-            IWebElement Name = driver.FindElement(By.XPath("//div[@id='g2599-name']"));
-            IWebElement Email = driver.FindElement(By.XPath("//div[@id='g2599-email']"));
-            IWebElement Website = driver.FindElement(By.XPath("//div[@id='g2599-website']"));
+            IWebElement Name = driver.FindElement(By.Id("g2599-name"));
+            IWebElement Email = driver.FindElement(By.Id("g2599-email"));
+            IWebElement Website = driver.FindElement(By.Id("g2599-website"));
 
             IWebElement element = driver.FindElement(By.CssSelector("select"));
             SelectElement Experience = new SelectElement(element);
 
-            IWebElement Comment = driver.FindElement(By.XPath("//div[@id='g2599-website']"));
+            IWebElement Comment = driver.FindElement(By.Name("g2599-comment"));
 
             Name.SendKeys(name);
             Name.SendKeys(Keys.Tab);
