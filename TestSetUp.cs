@@ -40,7 +40,9 @@ namespace RIBCCS
 
             driver.Url = TestContext.Parameters["URL"];
             driver.Manage().Window.Maximize(); //Maximize open window
-    }
+
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5); //Set global wait for WebDriver instance
+        }
 
         [TearDown]
         public void TearDown()
