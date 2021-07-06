@@ -23,6 +23,7 @@ To run in different browsers, Please update the runSettings file to the browser 
 There is 4 Scenarios :
 
 A test of the Combined Scenarios
+
 A test for each scenario
 
 Page Object Model design pattern was used to store elements and functions in classes associated to the different pages.
